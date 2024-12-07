@@ -1,20 +1,20 @@
 # 📜 About `get_next_line`
 
-Get_next_line is a project in 42 Yerevan common core where you will learn how to work with static variables, files, buffers and dynamic memory.
-In the get_next_line project you must implement the **get_next_line** function, which reads the file line by line and returns the current line.
+`get_next_line` is a project in 42 Yerevan common core where you will learn how to work with static variables, files, buffers and dynamic memory.
+In the get_next_line project you must implement the `get_next_line` function, which reads the file line by line and returns the current line.
 The function has "memory" because it returns the next line at each call.
 
 ## 🧪 How to use
 
-- Add get_next_line repository to the root directory of the project.
+- Add `get_next_line` repository to the root directory of the project.
 - Include the header file of the library in your .c files using `#include "get_next_line.h"`.
 - If you need to work with multiple files in your project, use `#include "get_next_line_bonus.h`.
 - Compile mandatory or bonus files from repository. You can compile with `-D BUFFER_SIZE=n` flag, where n is the size of the buffer.
 
 ## 🔍 How it works
 
-Get_next_line function stores characters from file descriptor in the static buffer, then dynamically allocates memory to construct the next complete line.
-After constructing it returns the line including the EOL character. If there are no more lines left, it returns `NULL`.
+`get_next_line` function stores characters from file descriptor in the static buffer, then dynamically allocates memory to construct the next complete line.
+After constructing it returns the line including the `\n` character. If there are no more lines left, it returns `NULL`.
 Since it alocates the memory every time, after each call you have to delete the allocated line manually.
 
 ### Function Prototype:
@@ -32,11 +32,11 @@ This is get_next_line.
 Enjoy coding!
 ```
 After each call of get_next_line, you will get:
-1. "Hello, World!"
-2. "This is get_next_line."
-3. "Enjoy coding!"
-4. NULL
-5. NULL
+1. `"Hello, World!"`
+2. `"This is get_next_line."`
+3. `"Enjoy coding!"`
+4. `NULL`
+5. `NULL`
 
 Here is example of usage:
 ```C
